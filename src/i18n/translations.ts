@@ -35,7 +35,7 @@ export const translations = {
     aboutPreview: {
       title: "Precision science for regulated industries",
       body:
-        "Nova Stability Center is an independent Contract Research Organization specialized in ICH-compliant stability studies and analytical testing. We partner with pharmaceutical, cosmetic, and supplement manufacturers to deliver data that stands up to Ministry of Health scrutiny.",
+        "Insight Stability Center is an independent Contract Research Organization specialized in ICH-compliant stability studies and analytical testing. We partner with pharmaceutical, cosmetic, and supplement manufacturers to deliver data that stands up to Ministry of Health scrutiny.",
     },
     servicesPreview: {
       title: "Our Core Services",
