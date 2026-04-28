@@ -190,6 +190,13 @@ export const translations = {
       getQuote: "اطلب عرض سعر",
       send: "إرسال الرسالة",
     },
+    search: {
+      placeholder: "ابحث في الخدمات أو الصفحات…",
+      pages: "الصفحات",
+      services: "الخدمات",
+      noResults: "لا توجد نتائج",
+      viewAll: "عرض كل الخدمات",
+    },
     hero: {
       eyebrow: "منظمة أبحاث تعاقدية",
       title: "دراسات الثبات والفحوصات الدوائية المعتمدة",
