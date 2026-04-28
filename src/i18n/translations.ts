@@ -26,6 +26,13 @@ export const translations = {
       subtitle:
         "Trusted laboratory solutions for pharmaceutical and cosmetic industries — delivering validated data and stamped reports that accelerate approvals.",
     },
+    search: {
+      placeholder: "Search services or pages…",
+      pages: "Pages",
+      services: "Services",
+      noResults: "No results found",
+      viewAll: "View all services",
+    },
     stats: {
       years: "Years Experience",
       clients: "Clients Served",
