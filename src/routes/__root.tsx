@@ -30,10 +30,10 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Nova Stability Center" },
+      { title: "Insight Stability Center" },
       { name: "description", content: "Certified stability studies and pharmaceutical testing services." },
-      { name: "author", content: "Nova Stability Center" },
-      { property: "og:title", content: "Nova Stability Center" },
+      { name: "author", content: "Insight Stability Center" },
+      { property: "og:title", content: "Insight Stability Center" },
       { property: "og:description", content: "Certified stability studies and pharmaceutical testing services." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
