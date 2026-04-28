@@ -1,25 +1,15 @@
-import { useLang } from "@/i18n/LanguageContext";
-import iconUrl from "@/assets/insight-icon.png";
+import logoUrl from "@/assets/insight-logo-final.png";
 
 export function Logo({ variant = "dark" }: { variant?: "dark" | "light" }) {
-  const { t } = useLang();
-  const text = variant === "light" ? "text-navy-foreground" : "text-navy";
-  const sub = variant === "light" ? "text-accent" : "text-accent";
   return (
-    <div className="flex flex-col items-center gap-1 leading-none">
+    <div className="flex items-center">
       <img
-        src={iconUrl}
-        alt="Insight Stability Center"
-        className="h-12 w-12 md:h-14 md:w-14 object-contain"
+        src={logoUrl}
+        alt="Insight Stability Center — إنسايت لدراسات الثبات"
+        className={`h-12 w-auto md:h-14 object-contain ${
+          variant === "light" ? "brightness-0 invert" : ""
+        }`}
       />
-      <div className="text-center">
-        <div className={`font-display text-[13px] md:text-sm font-bold tracking-tight ${text}`}>
-          {t.brand}
-        </div>
-        <div className={`text-[9px] md:text-[10px] uppercase tracking-[0.22em] ${sub}`}>
-          {t.tagline}
-        </div>
-      </div>
     </div>
   );
 }
