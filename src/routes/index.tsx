@@ -6,6 +6,7 @@ import { useLang } from "@/i18n/LanguageContext";
 import { PageLayout } from "@/components/PageLayout";
 import { Button } from "@/components/ui/button";
 import { Reveal, StaggerGroup, StaggerItem } from "@/components/Reveal";
+import { SiteSearch } from "@/components/SiteSearch";
 import { HeroBackground } from "@/components/HeroBackground";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 import heroLab from "@/assets/hero-lab.jpg";
@@ -103,6 +104,15 @@ function Home() {
               <Button asChild size="lg" variant="outline" className="glass border-white/30 text-navy-foreground hover:bg-white/15">
                 <Link to="/contact">{t.cta.contact}</Link>
               </Button>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.9 }}
+              className="mt-6"
+            >
+              <SiteSearch />
             </motion.div>
 
             {/* Trust indicators */}
