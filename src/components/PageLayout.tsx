@@ -1,6 +1,8 @@
 import type { ReactNode } from "react";
+import { motion } from "framer-motion";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
+import { HeroBackground } from "./HeroBackground";
 
 export function PageLayout({ children }: { children: ReactNode }) {
   return (
@@ -14,19 +16,37 @@ export function PageLayout({ children }: { children: ReactNode }) {
 
 export function PageHeader({ eyebrow, title, subtitle }: { eyebrow?: string; title: string; subtitle?: string }) {
   return (
-    <section className="relative overflow-hidden bg-gradient-navy text-navy-foreground">
-      <div className="absolute inset-0 grid-lines opacity-40" />
-      <div className="absolute -right-24 -top-24 h-96 w-96 rounded-full bg-accent/20 blur-3xl" />
-      <div className="relative mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-28">
+    <section className="relative overflow-hidden bg-navy text-navy-foreground">
+      <HeroBackground />
+      <div className="relative mx-auto max-w-7xl px-4 py-24 md:px-8 md:py-32">
         {eyebrow && (
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-accent animate-fade-in">
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="mb-4 inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-accent"
+          >
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />
             {eyebrow}
-          </div>
+          </motion.div>
         )}
-        <h1 className="max-w-3xl text-balance text-4xl font-bold leading-tight md:text-5xl lg:text-6xl animate-fade-up">{title}</h1>
+        <motion.h1
+          initial={{ opacity: 0, y: 24, filter: "blur(6px)" }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          className="max-w-3xl text-balance text-4xl font-bold leading-tight md:text-5xl lg:text-6xl"
+        >
+          {title}
+        </motion.h1>
         {subtitle && (
-          <p className="mt-5 max-w-2xl text-lg text-navy-foreground/75 animate-fade-up [animation-delay:120ms]">{subtitle}</p>
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="mt-5 max-w-2xl text-lg text-navy-foreground/75"
+          >
+            {subtitle}
+          </motion.p>
         )}
       </div>
     </section>
