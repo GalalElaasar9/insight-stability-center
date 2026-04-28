@@ -26,6 +26,13 @@ export const translations = {
       subtitle:
         "Trusted laboratory solutions for pharmaceutical and cosmetic industries — delivering validated data and stamped reports that accelerate approvals.",
     },
+    search: {
+      placeholder: "Search services or pages…",
+      pages: "Pages",
+      services: "Services",
+      noResults: "No results found",
+      viewAll: "View all services",
+    },
     stats: {
       years: "Years Experience",
       clients: "Clients Served",
@@ -182,6 +189,13 @@ export const translations = {
       readMore: "اقرأ المزيد",
       getQuote: "اطلب عرض سعر",
       send: "إرسال الرسالة",
+    },
+    search: {
+      placeholder: "ابحث في الخدمات أو الصفحات…",
+      pages: "الصفحات",
+      services: "الخدمات",
+      noResults: "لا توجد نتائج",
+      viewAll: "عرض كل الخدمات",
     },
     hero: {
       eyebrow: "منظمة أبحاث تعاقدية",
