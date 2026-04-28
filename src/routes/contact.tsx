@@ -11,9 +11,9 @@ import { Label } from "@/components/ui/label";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Nova Stability Center" },
+      { title: "Contact — Insight Stability Center" },
       { name: "description", content: "Request a quote or send us your project details. We respond within one business day." },
-      { property: "og:title", content: "Contact Nova Stability Center" },
+      { property: "og:title", content: "Contact Insight Stability Center" },
       { property: "og:description", content: "Get in touch with our scientific team." },
     ],
   }),
@@ -68,8 +68,8 @@ function Contact() {
           <div className="space-y-5">
             {[
               { icon: MapPin, title: t.contact.address, value: t.contact.addressValue },
-              { icon: Mail, title: t.contact.email, value: "info@novastability.com", href: "mailto:info@novastability.com" },
-              { icon: Phone, title: t.contact.phone, value: "+966 00 000 0000", href: "tel:+966000000000", ltr: true },
+              { icon: Mail, title: t.contact.email, value: "insight.laboratories2025@gmail.com", href: "mailto:insight.laboratories2025@gmail.com", ltr: true },
+              { icon: Phone, title: t.contact.phone, value: "010 211 131 44 • 015 0044 29 84 • 0109 547 2241", href: "tel:+201021113144", ltr: true },
             ].map((c) => (
               <div key={c.title} className="flex items-start gap-4 rounded-2xl border border-border bg-background p-6 shadow-card transition hover:border-accent/40">
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-accent text-accent-foreground shadow-glow">

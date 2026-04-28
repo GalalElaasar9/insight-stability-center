@@ -8,7 +8,7 @@ import { StaggerGroup, StaggerItem } from "@/components/Reveal";
 export const Route = createFileRoute("/certifications")({
   head: () => ({
     meta: [
-      { title: "Certifications — Nova Stability Center" },
+      { title: "Certifications — Insight Stability Center" },
       { name: "description", content: "Ministry of Health approval, ISO 17025 accreditation, GLP compliance and ISO 9001 certification." },
       { property: "og:title", content: "Certifications & Accreditations" },
       { property: "og:description", content: "Independently verified quality systems." },

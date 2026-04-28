@@ -9,9 +9,9 @@ import aboutImg from "@/assets/about-science.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Nova Stability Center" },
+      { title: "About — Insight Stability Center" },
       { name: "description", content: "Independent CRO specialized in ICH-compliant stability studies and analytical testing for pharmaceutical and cosmetic industries." },
-      { property: "og:title", content: "About Nova Stability Center" },
+      { property: "og:title", content: "About Insight Stability Center" },
       { property: "og:description", content: "Who we are, our mission, vision, values and why clients choose us." },
     ],
   }),

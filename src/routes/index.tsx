@@ -15,9 +15,9 @@ import aboutImg from "@/assets/about-science.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Nova Stability Center — Certified Pharmaceutical & Cosmetic Testing" },
+      { title: "Insight Stability Center — Certified Pharmaceutical & Cosmetic Testing" },
       { name: "description", content: "Independent CRO offering ICH-compliant stability studies, pharmaceutical and cosmetic testing with Ministry of Health–recognized reports." },
-      { property: "og:title", content: "Nova Stability Center" },
+      { property: "og:title", content: "Insight Stability Center" },
       { property: "og:description", content: "Certified stability studies and pharmaceutical testing services." },
     ],
   }),
