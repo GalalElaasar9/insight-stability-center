@@ -6,6 +6,7 @@ import { useLang } from "@/i18n/LanguageContext";
 import { PageLayout } from "@/components/PageLayout";
 import { Button } from "@/components/ui/button";
 import { Reveal, StaggerGroup, StaggerItem } from "@/components/Reveal";
+import { SiteSearch } from "@/components/SiteSearch";
 import { HeroBackground } from "@/components/HeroBackground";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 import heroLab from "@/assets/hero-lab.jpg";
@@ -15,9 +16,9 @@ import aboutImg from "@/assets/about-science.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Nova Stability Center — Certified Pharmaceutical & Cosmetic Testing" },
+      { title: "Insight Stability Center — Certified Pharmaceutical & Cosmetic Testing" },
       { name: "description", content: "Independent CRO offering ICH-compliant stability studies, pharmaceutical and cosmetic testing with Ministry of Health–recognized reports." },
-      { property: "og:title", content: "Nova Stability Center" },
+      { property: "og:title", content: "Insight Stability Center" },
       { property: "og:description", content: "Certified stability studies and pharmaceutical testing services." },
     ],
   }),
@@ -58,7 +59,7 @@ function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="mb-5 inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-accent"
+              className="mb-5 inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-sm md:text-base font-semibold uppercase tracking-[0.25em] text-accent"
             >
               <Sparkles className="h-3 w-3" />
               {t.hero.eyebrow}
@@ -103,6 +104,15 @@ function Home() {
               <Button asChild size="lg" variant="outline" className="glass border-white/30 text-navy-foreground hover:bg-white/15">
                 <Link to="/contact">{t.cta.contact}</Link>
               </Button>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.9 }}
+              className="mt-6"
+            >
+              <SiteSearch />
             </motion.div>
 
             {/* Trust indicators */}
@@ -232,7 +242,7 @@ function Home() {
             </motion.div>
           </Reveal>
           <Reveal delay={0.15}>
-            <div className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-accent">{t.nav.about}</div>
+            <div className="mb-3 text-sm md:text-base font-semibold uppercase tracking-[0.25em] text-accent">{t.nav.about}</div>
             <h2 className="text-balance text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">{t.aboutPreview.title}</h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">{t.aboutPreview.body}</p>
             <Button asChild className="group mt-8 bg-navy text-navy-foreground hover:bg-navy/90">
@@ -247,7 +257,7 @@ function Home() {
         <div className="absolute inset-0 grid-lines-dark opacity-40" />
         <div className="relative mx-auto max-w-7xl px-4 md:px-8">
           <Reveal className="mx-auto mb-16 max-w-2xl text-center">
-            <div className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-accent">{t.nav.services}</div>
+            <div className="mb-3 text-sm md:text-base font-semibold uppercase tracking-[0.25em] text-accent">{t.nav.services}</div>
             <h2 className="text-balance text-3xl font-bold md:text-4xl lg:text-5xl">{t.servicesPreview.title}</h2>
             <p className="mt-4 text-muted-foreground">{t.servicesPreview.subtitle}</p>
           </Reveal>
@@ -291,7 +301,7 @@ function Home() {
       {/* PROCESS PREVIEW */}
       <section className="relative mx-auto max-w-7xl px-4 py-28 md:px-8">
         <Reveal className="mx-auto mb-16 max-w-2xl text-center">
-          <div className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-accent">{t.nav.process}</div>
+          <div className="mb-3 text-sm md:text-base font-semibold uppercase tracking-[0.25em] text-accent">{t.nav.process}</div>
           <h2 className="text-balance text-3xl font-bold md:text-4xl lg:text-5xl">{t.processPreview.title}</h2>
           <p className="mt-4 text-muted-foreground">{t.processPreview.subtitle}</p>
         </Reveal>
@@ -323,7 +333,7 @@ function Home() {
         <HeroBackground />
         <div className="relative mx-auto max-w-7xl px-4 md:px-8">
           <Reveal className="mx-auto mb-16 max-w-2xl text-center">
-            <div className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-accent">{t.nav.certifications}</div>
+            <div className="mb-3 text-sm md:text-base font-semibold uppercase tracking-[0.25em] text-accent">{t.nav.certifications}</div>
             <h2 className="text-balance text-3xl font-bold md:text-4xl lg:text-5xl">{t.certPreview.title}</h2>
             <p className="mt-4 text-navy-foreground/70">{t.certPreview.subtitle}</p>
           </Reveal>

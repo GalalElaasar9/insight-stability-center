@@ -8,7 +8,7 @@ import { PageLayout, PageHeader } from "@/components/PageLayout";
 export const Route = createFileRoute("/process")({
   head: () => ({
     meta: [
-      { title: "Study Process — Nova Stability Center" },
+      { title: "Study Process — Insight Stability Center" },
       { name: "description", content: "A transparent six-stage stability study process, from sample receiving to signed Ministry of Health–ready report." },
       { property: "og:title", content: "Our Study Process" },
       { property: "og:description", content: "Six controlled, fully documented stages." },

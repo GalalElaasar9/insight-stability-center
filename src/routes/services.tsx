@@ -9,9 +9,9 @@ import { Reveal, StaggerGroup, StaggerItem } from "@/components/Reveal";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — Nova Stability Center" },
+      { title: "Services — Insight Stability Center" },
       { name: "description", content: "Stability studies, pharmaceutical and cosmetic testing, QC, and microbiological services." },
-      { property: "og:title", content: "Laboratory Services — Nova Stability Center" },
+      { property: "og:title", content: "Laboratory Services — Insight Stability Center" },
       { property: "og:description", content: "Full-service stability and analytical testing under one roof." },
     ],
   }),

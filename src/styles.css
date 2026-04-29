@@ -45,9 +45,9 @@
   --shadow-glow: 0 10px 40px -10px oklch(0.55 0.2 255 / 0.45);
   --shadow-card: 0 4px 24px -8px oklch(0.25 0.08 260 / 0.15);
 
-  --gradient-hero: linear-gradient(135deg, oklch(0.2 0.09 260) 0%, oklch(0.28 0.14 255) 50%, oklch(0.45 0.2 255) 100%);
-  --gradient-navy: linear-gradient(180deg, oklch(0.22 0.1 260), oklch(0.15 0.07 260));
-  --gradient-accent: linear-gradient(135deg, oklch(0.55 0.2 255), oklch(0.7 0.16 240));
+  --gradient-hero: linear-gradient(135deg, oklch(0.22 0.12 268) 0%, oklch(0.4 0.15 240) 45%, oklch(0.78 0.12 215) 100%);
+  --gradient-navy: linear-gradient(180deg, oklch(0.22 0.12 268), oklch(0.15 0.08 270));
+  --gradient-accent: linear-gradient(135deg, oklch(0.6 0.16 230), oklch(0.82 0.11 210));
 
   --animate-fade-in: fade-in 0.6s ease-out both;
   --animate-fade-up: fade-up 0.7s ease-out both;
@@ -76,12 +76,12 @@
 :root {
   --radius: 0.75rem;
 
-  /* Brand palette: Navy #0A1F44, Sky #2D6CDF */
-  --navy: oklch(0.22 0.095 262);
-  --navy-foreground: oklch(0.98 0.005 250);
-  --sky: oklch(0.56 0.19 256);
-  --sky-foreground: oklch(0.99 0.005 250);
-  --surface: oklch(0.975 0.005 250);
+  /* Insight brand: deep navy + cyan/sky from logo */
+  --navy: oklch(0.22 0.12 268);
+  --navy-foreground: oklch(0.98 0.01 220);
+  --sky: oklch(0.72 0.14 220);
+  --sky-foreground: oklch(0.18 0.08 268);
+  --surface: oklch(0.97 0.015 215);
 
   --background: oklch(1 0 0);
   --foreground: oklch(0.22 0.095 262);

@@ -58,8 +58,8 @@ export function Footer() {
             </h4>
             <ul className="space-y-3 text-sm text-navy-foreground/75">
               <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" /><span>{t.contact.addressValue}</span></li>
-              <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-accent" /><a href="mailto:info@novastability.com" className="hover:text-accent">info@novastability.com</a></li>
-              <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-accent" /><a href="tel:+966000000000" dir="ltr" className="hover:text-accent">+966 00 000 0000</a></li>
+              <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-accent" /><a href="mailto:insight.laboratories2025@gmail.com" className="hover:text-accent break-all">insight.laboratories2025@gmail.com</a></li>
+              <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-accent" /><a href="tel:+201021113144" dir="ltr" className="hover:text-accent">010 211 131 44</a></li>
             </ul>
           </div>
         </div>

@@ -2,9 +2,9 @@ export type Lang = "en" | "ar";
 
 export const translations = {
   en: {
-    brand: "Nova Stability Center",
-    brandShort: "Nova",
-    tagline: "Scientific Excellence",
+    brand: "Insight Stability Center",
+    brandShort: "Insight",
+    tagline: "Stability Studies",
     nav: {
       home: "Home",
       about: "About",
@@ -26,6 +26,13 @@ export const translations = {
       subtitle:
         "Trusted laboratory solutions for pharmaceutical and cosmetic industries — delivering validated data and stamped reports that accelerate approvals.",
     },
+    search: {
+      placeholder: "Search services or pages…",
+      pages: "Pages",
+      services: "Services",
+      noResults: "No results found",
+      viewAll: "View all services",
+    },
     stats: {
       years: "Years Experience",
       clients: "Clients Served",
@@ -35,7 +42,7 @@ export const translations = {
     aboutPreview: {
       title: "Precision science for regulated industries",
       body:
-        "Nova Stability Center is an independent Contract Research Organization specialized in ICH-compliant stability studies and analytical testing. We partner with pharmaceutical, cosmetic, and supplement manufacturers to deliver data that stands up to Ministry of Health scrutiny.",
+        "Insight Stability Center is an independent Contract Research Organization specialized in ICH-compliant stability studies and analytical testing. We partner with pharmaceutical, cosmetic, and supplement manufacturers to deliver data that stands up to Ministry of Health scrutiny.",
     },
     servicesPreview: {
       title: "Our Core Services",
@@ -50,7 +57,7 @@ export const translations = {
       subtitle: "Recognized by national and international regulatory bodies.",
     },
     about: {
-      title: "About Nova Stability Center",
+      title: "About Insight Stability Center",
       whoTitle: "Who We Are",
       whoBody:
         "A specialized scientific laboratory serving pharmaceutical factories, cosmetic brands, and nutraceutical companies across the region with ICH Q1A(R2) stability programs and GMP-aligned analytical testing.",
@@ -150,7 +157,9 @@ export const translations = {
       phone: "Phone Number",
       message: "Project Details",
       address: "Address",
-      addressValue: "King Abdulaziz Rd, Scientific District, Riyadh",
+      addressValue: "38 Abobakr Elseddeq St., Elmahkma Square, Misr Elgadida, Cairo",
+      emailValue: "insight.laboratories2025@gmail.com",
+      phoneValue: "010 211 131 44  •  015 0044 29 84  •  0109 547 2241",
       sent: "Thank you — your message has been received.",
     },
     footer: {
@@ -163,9 +172,9 @@ export const translations = {
     },
   },
   ar: {
-    brand: "مركز نوفا للدراسات الثباتية",
-    brandShort: "نوفا",
-    tagline: "التميّز العلمي",
+    brand: "إنسايت لدراسات الثبات",
+    brandShort: "إنسايت",
+    tagline: "دراسات الثبات",
     nav: {
       home: "الرئيسية",
       about: "من نحن",
@@ -180,6 +189,13 @@ export const translations = {
       readMore: "اقرأ المزيد",
       getQuote: "اطلب عرض سعر",
       send: "إرسال الرسالة",
+    },
+    search: {
+      placeholder: "ابحث في الخدمات أو الصفحات…",
+      pages: "الصفحات",
+      services: "الخدمات",
+      noResults: "لا توجد نتائج",
+      viewAll: "عرض كل الخدمات",
     },
     hero: {
       eyebrow: "منظمة أبحاث تعاقدية",
@@ -196,7 +212,7 @@ export const translations = {
     aboutPreview: {
       title: "علم دقيق للصناعات المنظّمة",
       body:
-        "مركز نوفا هو منظمة أبحاث تعاقدية مستقلة متخصصة في دراسات الثبات المتوافقة مع ICH والفحوصات التحليلية. نتعاون مع مصنّعي الأدوية ومستحضرات التجميل والمكملات الغذائية لتقديم بيانات تلبّي متطلبات وزارة الصحة.",
+        "مركز إنسايت هو منظمة أبحاث تعاقدية مستقلة متخصصة في دراسات الثبات المتوافقة مع ICH والفحوصات التحليلية. نتعاون مع مصنّعي الأدوية ومستحضرات التجميل والمكملات الغذائية لتقديم بيانات تلبّي متطلبات وزارة الصحة.",
     },
     servicesPreview: {
       title: "خدماتنا الأساسية",
@@ -211,7 +227,7 @@ export const translations = {
       subtitle: "معترف بنا من الجهات التنظيمية الوطنية والدولية.",
     },
     about: {
-      title: "عن مركز نوفا للدراسات الثباتية",
+      title: "عن مركز إنسايت لدراسات الثبات",
       whoTitle: "من نحن",
       whoBody:
         "مختبر علمي متخصص يخدم مصانع الأدوية والعلامات التجارية لمستحضرات التجميل والمكملات الغذائية في المنطقة ببرامج ثبات وفق ICH Q1A(R2) وفحوصات تحليلية متوافقة مع GMP.",
@@ -283,7 +299,9 @@ export const translations = {
       phone: "رقم الهاتف",
       message: "تفاصيل المشروع",
       address: "العنوان",
-      addressValue: "طريق الملك عبدالعزيز، الحي العلمي، الرياض",
+      addressValue: "٣٨ شارع أبو بكر الصديق، ميدان المحكمة، مصر الجديدة، القاهرة",
+      emailValue: "insight.laboratories2025@gmail.com",
+      phoneValue: "٠١٠ ٢١١ ١٣١ ٤٤  •  ٠١٥ ٠٠٤٤ ٢٩ ٨٤  •  ٠١٠٩ ٥٤٧ ٢٢٤١",
       sent: "شكراً لك — وصلتنا رسالتك.",
     },
     footer: {
